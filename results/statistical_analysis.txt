@@ -1,0 +1,129 @@
+======================================================================
+STATISTICAL ANALYSIS: PSNR
+======================================================================
+
+1. DESCRIPTIVE STATISTICS
+----------------------------------------------------------------------
+Method               Mean         Std          95% CI                   
+----------------------------------------------------------------------
+Lo Shu               27.8703      15.9456      [24.3218, 31.4189]
+Mean                 29.6753      18.6984      [25.5142, 33.8364]
+Gaussian             32.1159      16.4303      [28.4596, 35.7723]
+Median               34.5475      17.3981      [30.6757, 38.4192]
+
+2. ONE-WAY ANOVA
+----------------------------------------------------------------------
+F-statistic: 2.2999
+p-value: 0.077301
+Significant: No
+Effect Size (η²): 0.0214
+
+3. FRIEDMAN TEST (Non-parametric)
+----------------------------------------------------------------------
+Chi-squared: 58.5000
+p-value: 0.000000
+Significant: Yes
+Effect Size (Kendall's W): 0.2437
+
+======================================================================
+INTERPRETATION GUIDE:
+  - p < 0.05: Statistically significant difference
+  - Effect Size (Cohen's d): 0.2=small, 0.5=medium, 0.8=large
+  - Effect Size (η²): 0.01=small, 0.06=medium, 0.14=large
+======================================================================
+
+
+
+======================================================================
+STATISTICAL ANALYSIS: SSIM
+======================================================================
+
+1. DESCRIPTIVE STATISTICS
+----------------------------------------------------------------------
+Method               Mean         Std          95% CI                   
+----------------------------------------------------------------------
+Lo Shu               0.9996       0.0000       [0.9996, 0.9996]
+Mean                 0.9994       0.0000       [0.9994, 0.9994]
+Gaussian             0.9999       0.0000       [0.9999, 0.9999]
+Median               0.9995       0.0000       [0.9995, 0.9995]
+
+2. ONE-WAY ANOVA
+----------------------------------------------------------------------
+F-statistic: 51691.1365
+p-value: 0.000000
+Significant: Yes
+Effect Size (η²): 0.9998
+
+3. FRIEDMAN TEST (Non-parametric)
+----------------------------------------------------------------------
+Chi-squared: 30.0000
+p-value: 0.000001
+Significant: Yes
+Effect Size (Kendall's W): 1.0000
+
+4. PAIRWISE COMPARISONS (Paired t-tests)
+----------------------------------------------------------------------
+Comparison                               p-value      Significant 
+----------------------------------------------------------------------
+Lo Shu vs Mean                 0.000000     Yes         
+Lo Shu vs Gaussian             0.000000     Yes         
+Lo Shu vs Median               0.000000     Yes         
+Mean vs Gaussian             0.000000     Yes         
+Mean vs Median               0.000000     Yes         
+Gaussian vs Median               0.000000     Yes         
+
+======================================================================
+INTERPRETATION GUIDE:
+  - p < 0.05: Statistically significant difference
+  - Effect Size (Cohen's d): 0.2=small, 0.5=medium, 0.8=large
+  - Effect Size (η²): 0.01=small, 0.06=medium, 0.14=large
+======================================================================
+
+
+
+======================================================================
+STATISTICAL ANALYSIS: EDGE_PRESERVATION
+======================================================================
+
+1. DESCRIPTIVE STATISTICS
+----------------------------------------------------------------------
+Method               Mean         Std          95% CI                   
+----------------------------------------------------------------------
+Lo Shu               0.9523       0.0000       [0.9523, 0.9524]
+Mean                 0.9475       0.0000       [0.9475, 0.9475]
+Gaussian             0.9917       0.0000       [0.9917, 0.9917]
+Median               0.9967       0.0000       [0.9967, 0.9967]
+
+2. ONE-WAY ANOVA
+----------------------------------------------------------------------
+F-statistic: 24766005.1398
+p-value: 0.000000
+Significant: Yes
+Effect Size (η²): 1.0000
+
+3. FRIEDMAN TEST (Non-parametric)
+----------------------------------------------------------------------
+Chi-squared: 30.0000
+p-value: 0.000001
+Significant: Yes
+Effect Size (Kendall's W): 1.0000
+
+4. PAIRWISE COMPARISONS (Paired t-tests)
+----------------------------------------------------------------------
+Comparison                               p-value      Significant 
+----------------------------------------------------------------------
+Lo Shu vs Mean                 0.000000     Yes         
+Lo Shu vs Gaussian             0.000000     Yes         
+Lo Shu vs Median               0.000000     Yes         
+Mean vs Gaussian             0.000000     Yes         
+Mean vs Median               0.000000     Yes         
+Gaussian vs Median               0.000000     Yes         
+
+======================================================================
+INTERPRETATION GUIDE:
+  - p < 0.05: Statistically significant difference
+  - Effect Size (Cohen's d): 0.2=small, 0.5=medium, 0.8=large
+  - Effect Size (η²): 0.01=small, 0.06=medium, 0.14=large
+======================================================================
+
+

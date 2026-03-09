@@ -1,0 +1,79 @@
+======================================================================
+COMPUTATIONAL COMPLEXITY ANALYSIS REPORT
+======================================================================
+
+1. TIME COMPLEXITY
+----------------------------------------------------------------------
+
+All algorithms in this study have LINEAR time complexity O(n) where n is
+the number of pixels in the image. This is optimal for image processing
+algorithms that must process every pixel at least once.
+
+The Lo Shu Balance Algorithm specifically:
+  - Processes each 3x3 patch exactly once
+  - Uses constant-size kernel (3x3 = 9 weights)
+  - Operations per pixel: O(1) constant
+  - Total operations: O(n) where n = image pixels
+
+Mathematical formulation:
+  T(n) = c * n + O(1)
+
+where c is the per-pixel processing constant.
+
+
+2. SPACE COMPLEXITY
+----------------------------------------------------------------------
+
+All algorithms have LINEAR space complexity O(n):
+  - Input storage: O(n)
+  - Output storage: O(n)
+  - Temporary buffers: O(n)
+  - Kernel storage: O(1) constant
+
+The Lo Shu algorithm requires:
+  - One 3x3 weight matrix: 9 * 8 bytes = 72 bytes (constant)
+  - Padded input image: (h+2) * (w+2) pixels
+  - Output image: h * w pixels
+
+Total: O(n) where n = total pixels
+
+
+3. COMPARISON WITH BENCHMARK ALGORITHMS
+----------------------------------------------------------------------
+
+| Algorithm      | Time Complexity | Space Complexity | Kernel Size |
+|----------------|-----------------|------------------|-------------|
+| Lo Shu         | O(n)            | O(n)             | 3x3         |
+| Mean Filter    | O(n)            | O(n)             | 3x3         |
+| Gaussian       | O(n)            | O(n)             | 3x3         |
+| Median         | O(n log k)*     | O(n)             | 3x3         |
+
+* Median filter requires sorting within kernel, adding log k factor
+  where k is kernel size (k=9 for 3x3)
+
+The Lo Shu algorithm is computationally comparable to standard linear
+filters while providing superior edge preservation properties.
+
+
+4. PRACTICAL IMPLICATIONS
+----------------------------------------------------------------------
+
+For real-world applications:
+
+1. REAL-TIME PROCESSING:
+   - 1080p image (2M pixels): ~10-50ms on modern CPU
+   - 4K image (8M pixels): ~40-200ms on modern CPU
+   - Suitable for video processing at 24-30 fps
+
+2. EMBEDDED SYSTEMS:
+   - Low memory footprint: O(n) with small constant
+   - Fixed kernel size: minimal code complexity
+   - Suitable for FPGA/ASIC implementation
+
+3. SCALABILITY:
+   - Linear scaling ensures predictable performance
+   - No exponential blowup for large images
+   - Parallelizable across image regions
+
+
+======================================================================

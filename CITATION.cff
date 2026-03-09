@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Lo Shu Balance Algorithm"
+abstract: "A novel image denoising algorithm based on the ancient Chinese Lo Shu Magic Square (3x3)"
+authors:
+  - family-names: "YourLastName"
+    given-names: "YourFirstName"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Your University/Organization"
+    email: "your.email@example.com"
+version: 1.0.0
+doi: "10.5281/zenodo.XXXXX"
+date-released: 2026-03-09
+url: "https://github.com/YOUR_USERNAME/lo_shu_algorithm"
+repository-code: "https://github.com/YOUR_USERNAME/lo_shu_algorithm"
+license: AGPL-3.0
+keywords:
+  - "image processing"
+  - "denoising"
+  - "magic square"
+  - "Lo Shu"
+  - "edge preservation"
+  - "computer vision"
+  - "medical imaging"
+  - "astronomical imaging"
+programming-languages:
+  - "Python 3"
+references:
+  - type: article
+    title: "Digital Image Processing"
+    authors:
+      - family-names: "Gonzalez"
+        given-names: "Rafael C."
+      - family-names: "Woods"
+        given-names: "Richard E."
+    year: 2018
+    publisher: "Pearson"
+    edition: "4th"
+  - type: article
+    title: "The origin of magic squares"
+    authors:
+      - family-names: "Fodor"
+        given-names: "F. A."
+    journal: "Scientific American"
+    volume: 222
+    issue: 3
+    year: 1970
+    start-page: 98
+    end-page: 106
