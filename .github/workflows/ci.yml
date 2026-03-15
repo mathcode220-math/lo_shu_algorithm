@@ -90,12 +90,17 @@ jobs:
         test -f CONTRIBUTING.md
         test -f LICENSE
         test -f CHANGELOG.md
-    
-    - name: Validate Markdown
-      run: |
-        pip install markdownlint-cli
-        markdownlint *.md docs/*.md || true
 
+        - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Install and run markdownlint
+      run: |
+        npm install -g markdownlint-cli
+        markdownlint *.md docs/*.md || true
+   
   security:
     runs-on: ubuntu-latest
     
