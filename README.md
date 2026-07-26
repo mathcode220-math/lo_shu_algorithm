@@ -292,13 +292,6 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ---
 
-## 📧 Contact
-
-- **Author:** Your Name
-- **Email:** your.email@example.com
-- **Institution:** Your University/Organization
-- **GitHub:** [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-
 ---
 
 ## 🙏 Acknowledgments
